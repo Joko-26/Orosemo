@@ -1,0 +1,30 @@
+name: Generate sitemap
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Sitemap generieren
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url: https://orosemo.de
+          include-html: true
+          include-pdf: false
+
+      - name: Sitemap committen
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add sitemap.xml
+          git commit -m "Sitemap automatisch generiert"
+          git push
