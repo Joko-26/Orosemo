@@ -32,6 +32,7 @@ ul {
 }
 
 li {
+  background-color: #00000093;
   float: left;
 }
 
@@ -377,6 +378,23 @@ h1.center, h2.center {
   .play-button {
     padding: 12px 24px;
     font-size: 1em;
+  }
+  .index-rows {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .index-rows img {
+    width: 120px;
+    margin-bottom: 16px;
+    padding: 0;
+    
+  }
+  .index-cards {
+    padding: 20px;
+    width: 95vw;
+    box-sizing: border-box;
+    align-items: center;
   }
 
 }
