@@ -136,8 +136,9 @@ li .active {
   border: 2px solid #09262b;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
-  width: 150%;
+  width: 100%;
   height: 150%;
+  margin: 0 auto;
   max-width: 1000px;
   box-sizing: border-box;
   display: flex;
@@ -161,23 +162,9 @@ li .active {
   gap: 40px;
 }
 
-.card-image {
-  flex: 1 1 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 220px;
-}
-
+.card-image,
 .card-info,
 .card-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.card-image {
   flex: 1 1 0;
   display: flex;
   align-items: center;
@@ -194,11 +181,11 @@ li .active {
 }
 
 .card-info {
-  flex: 2 1 0;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
   padding: 0 10px;
+  max-width: 300px;
+  word-break: break-word;
 }
 
 .card-actions {
@@ -226,6 +213,12 @@ li .active {
   color: #ccc;
   text-align: center;
   margin: 1px 0;
+}
+
+.check-button-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .play-button {

@@ -17,75 +17,69 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="games.html">Games</a></li>
+      <li><a href="tools.html">Tools</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <h1 class="center">Games</h1>
+    <h1 class="center"> My Games</h1>
 
-    <div id="game-container" class="game-container"></div>
 
-    <script>
-      const games = [
-        {
-          title: "Jolly Jumper",
-          subtitle: "Little Christmas platformer",
-          genre: "Platformer",
-          image:
-            "https://img.itch.zone/aW1nLzE5NDEwMDQ4LnBuZw==/315x250%23c/szJSIS.png",
-          link: "https://orosemo.itch.io/jolly-jumper",
-        },
-        {
-          title: "Easter Eggscapades",
-          subtitle: "Easter themed rage platformer",
-          genre: "Platformer",
-          image:
-            "https://img.itch.zone/aW1nLzIwNzk0OTA0LnBuZw==/315x250%23c/f0KTIQ.png",
-          link: "https://orosemo.itch.io/easter",
-        },
-
-        // Add more games here:
-        // {
-        //      title: "Game Title",
-        //      subtitle: "Short description",
-        //      genre: "Platformer",
-        //      image: "URL_TO_IMAGE",
-        //      link: "URL_TO_GAME"
-        // }
-      ];
-
-      const container = document.getElementById("game-container");
-
-      games.forEach((game) => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <div class="title">${game.title}</div>
+    <div id="game-container" class="game-container">
+      <div class="card">
+        <div class="title">Jolly Jumper</div>
           <div class="card-row">
               <div class="card-image">
-                <img src="${game.image}" alt="${game.title}">
+                <img src= "https://img.itch.zone/aW1nLzE5NDEwMDQ4LnBuZw==/315x250%23c/szJSIS.png" alt="Jolly Jumper">
               </div>
               <div class="card-info">
-                <div class="subtitle">${game.subtitle}</div>
-                <div class="genre">${game.genre}</div>
+                <div class="subtitle">Little Christmas platformer</div>
+                <div class="genre">Platformer</div>
               </div>
               <div class="card-actions">
-                <a href="${game.link}" class="play-button" target="_blank">Play on Itch.io</a>
+                <a href="https://orosemo.itch.io/jolly-jumper" class="play-button" target="_blank">Play on Itch.io</a>
+              </div>
             </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="title">Easter Eggscapades</div>
+          <div class="card-row">
+              <div class="card-image">
+                <img src= "https://img.itch.zone/aW1nLzIwNzk0OTA0LnBuZw==/105x83%23/HktMdm.png" alt="Jolly Jumper">
+              </div>
+              <div class="card-info">
+                <div class="subtitle"> Ohhh NO! the easter bunny has put an easteregg in the wrong nest. It has to get in the right one.</div>
+                <div class="genre">Rage Platformer</div>
+              </div>
+              <div class="card-actions">
+                <a href="https://orosemo.itch.io/easter" class="play-button" target="_blank">Play on Itch.io</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  <!-- 
+  <div id="game-container" class="game-container">
+    <div class="title">Jolly Jumper</div>
+      <div class="card-row">
+          <div class="card-image">
+            <img src= "https://img.itch.zone/aW1nLzIwNzk0OTA0LnBuZw==/105x83%23/HktMdm.png" alt="Jolly Jumper">
           </div>
-        `;
-        container.appendChild(card);
-      });
+          <div class="card-info">
+            <div class="subtitle"> Ohhh NO! the easter bunny has put an easteregg in the wrong nest. It has to get in the right one.</div>
+            <div class="genre">Rage Platformer</div>
+          </div>
+          <div class="card-actions">
+            <a href="https://orosemo.itch.io/easter" class="play-button" target="_blank">Play on Itch.io</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  -->
 
-      // Adding invisible cards to fill the rows
-      const totalCards = 12; // Set the number of cards to fill
-      const visibleCards = games.length;
-      const invisibleCardsCount = totalCards - visibleCards;
-
-      for (let i = 0; i < invisibleCardsCount; i++) {
-        const invisibleCard = document.createElement("div");
-        invisibleCard.className = "invisible-card";
-        container.appendChild(invisibleCard);
-      }
-    </script>
   </body>
 </html>
