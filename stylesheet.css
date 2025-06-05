@@ -1,6 +1,5 @@
 /* Allgemein */
 body {
-  align-items: center;
   background-color: #000;
   font-family: "Capriola", sans-serif;
   color: #39816d;
@@ -50,6 +49,20 @@ li a:hover {
 
 li .active {
   background-color: #04aa6d;
+}
+
+a {
+  color: #04aa6d; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.about-section {
+  margin-bottom: 1.2em;
 }
 
 /* Center-Klasse */
@@ -336,6 +349,11 @@ h1.center, h2.center {
 }
 
 @media (max-width: 800px) {
+  ul {
+    margin: 1;
+    padding: 0;
+  }
+
   .game-container {
     padding: 20px;
     gap: 16px;
@@ -393,6 +411,11 @@ h1.center, h2.center {
 }
 
 @media (max-width: 500px) {
+  ul {
+    margin: 10;
+    padding: 0;
+  }
+
   .card {
     padding: 10px;
     gap: 12px;
