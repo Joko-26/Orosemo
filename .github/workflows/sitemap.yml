@@ -20,7 +20,7 @@ jobs:
       - name: Sitemap generieren
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url: https://orosemo.de
+          base-url-path: https://orosemo.de
           include-html: true
           include-pdf: false
 
