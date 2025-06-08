@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://orosemo.de/sitemap.xml
+Sitemap: https://qrcode-creator.orosemo.de/sitemap.xml
