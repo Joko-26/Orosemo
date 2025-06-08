@@ -380,6 +380,7 @@ h1.center, h2.center {
     gap: 30px;
     margin-left: 80px;
     margin-right: 80px;
+    width: 100%;
   }
 
   .index-rows img {
@@ -446,6 +447,7 @@ h1.center, h2.center {
     gap: 16px;
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
   }
 
   .index-cards {
