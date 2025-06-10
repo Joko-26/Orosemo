@@ -360,8 +360,8 @@ h1.center, h2.center {
     gap: 24px;
     min-height: unset;
     width: 100%;
-    max-width: 500px;
-    min-width: 500px;
+    max-width: 400px;
+    min-width: 350px;
   }
 
   .card-row {
@@ -449,3 +449,60 @@ h1.center, h2.center {
 
 }
 
+@media (max-width: 250px) {
+
+
+  ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    display: block;
+    margin: 10px;
+    padding: 0;
+  }
+
+  .center-links {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 20px;
+    gap: 24px;
+    min-height: unset;
+    width: 100%;
+    max-width: 250px;
+    min-width: 250px;
+  }
+
+  .card-image img {
+    max-width: 98vw;
+    max-height: 120px;
+  }
+
+  .title {
+    font-size: 1.1em;
+  }
+
+  .subtitle,
+  .genre {
+    font-size: 0.9em;
+  }
+
+  .play-button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+
+  .index-descr {
+    font-size: 1em;
+    padding: 0 8px;
+    
+  }
+
+  .center,
+  .front-img {
+    max-width: 95vw;
+    height: auto;
+  }
+
+
+}
