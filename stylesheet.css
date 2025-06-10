@@ -411,8 +411,8 @@ h1.center, h2.center {
     gap: 24px;
     min-height: unset;
     width: 100%;
-    max-width: 250px;
-    min-width: 250px;
+    max-width: 400px;
+    min-width: 350px;
   }
 
   .card-image img {
